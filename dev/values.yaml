@@ -1,1 +1,10 @@
-# config
+# configtax_tag: "7c625b9"
+product_tag: "main"
+cart_tag: "main"
+order_tag: "main"
+customer_tag: "main"
+inventory_tag: "main"
+media_tag: "main"
+search_tag: "main"
+storefront-bff_tag: "main"
+backoffice-bff_tag: "main"
