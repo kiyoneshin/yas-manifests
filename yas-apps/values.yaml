@@ -1,0 +1,31 @@
+global:
+  registry: "docker.io/your-dockerhub-username"
+  defaultTag: "latest"
+
+services:
+  product:
+    port: 8080
+  cart:
+    port: 8081
+  order:
+    port: 8082
+  customer:
+    port: 8083
+  inventory:
+    port: 8084
+  tax:
+    port: 8085
+  media:
+    port: 8086
+  search:
+    port: 8087
+  storefront-bff:
+    port: 8088
+  backoffice-bff:
+    port: 8089
+  storefront-ui:
+    port: 3000
+  backoffice-ui:
+    port: 3001
+  swagger-ui:
+    port: 8080

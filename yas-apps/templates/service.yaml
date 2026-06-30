@@ -1,0 +1,23 @@
+{{- $total := len .Values.services -}}
+{{- $i := 0 -}}
+{{- range $serviceName, $config := .Values.services }}
+{{- $i = add1 $i }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $serviceName }}
+  namespace: {{ $.Release.Namespace }}
+  labels:
+    app: {{ $serviceName }}
+spec:
+  type: ClusterIP
+  ports:
+  - port: {{ $config.port }}
+    targetPort: {{ $config.port }}
+    protocol: TCP
+  selector:
+    app: {{ $serviceName }}
+{{- if ne $i $total }}
+---
+{{- end }}
+{{- end }}

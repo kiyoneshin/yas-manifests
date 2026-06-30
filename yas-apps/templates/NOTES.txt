@@ -1,0 +1,12 @@
+The yas-apps microservices have been successfully deployed.
+
+List of deployed services:
+{{- range $serviceName, $config := .Values.services }}
+- {{ $serviceName }} (Port: {{ $config.port }})
+{{- end }}
+
+To check the status of your pods, run:
+  kubectl get pods --namespace {{ .Release.Namespace }} -l "app"
+
+To check the services, run:
+  kubectl get svc --namespace {{ .Release.Namespace }}
