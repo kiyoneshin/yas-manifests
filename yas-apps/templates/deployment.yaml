@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: {{ $serviceName }}
-        image: "{{ $.Values.global.registry }}/{{ $serviceName }}:{{ $config.tag | default $.Values.global.defaultTag }}"
+        image: "{{ $.Values.global.registry }}/yas-{{ $serviceName }}:{{ $config.tag | default $.Values.global.defaultTag }}"
         ports:
         - containerPort: {{ $config.port }}
         env:
