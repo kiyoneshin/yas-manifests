@@ -1,5 +1,5 @@
 global:
-  registry: "docker.io/your-dockerhub-username"
+  registry: "docker.io/kiyoneshin"
   defaultTag: "latest"
 
 services:
