@@ -1,10 +1,21 @@
-tax_tag: "7c625b9"
-product_tag: "main"
-cart_tag: "main"
-order_tag: "main"
-customer_tag: "main"
-inventory_tag: "main"
-media_tag: "main"
-search_tag: "main"
-storefront-bff_tag: "main"
-backoffice-bff_tag: "main"
+services:
+  tax:
+    tag: "7c625b9"
+  product:
+    tag: "main"
+  cart:
+    tag: "main"
+  order:
+    tag: "main"
+  customer:
+    tag: "main"
+  inventory:
+    tag: "main"
+  media:
+    tag: "main"
+  search:
+    tag: "main"
+  storefront-bff:
+    tag: "main"
+  backoffice-bff:
+    tag: "main"
