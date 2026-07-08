@@ -27,6 +27,10 @@ spec:
         env:
         - name: SPRING_DATASOURCE_URL
           value: "jdbc:postgresql://postgresql.dev.svc.cluster.local:5432/yas_{{ $serviceName }}"
+        - name: SPRING_DATASOURCE_USERNAME
+          value: "postgres"
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: "yas_password"
         - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
           value: "kafka.dev.svc.cluster.local:9092"
 {{- if ne $i $total }}
