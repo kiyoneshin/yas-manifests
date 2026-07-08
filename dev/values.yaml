@@ -25,3 +25,5 @@ services:
     tag: "main"
   swagger-ui:
     image: "swaggerapi/swagger-ui:latest"
+  identity:
+    tag: "main"

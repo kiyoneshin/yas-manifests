@@ -29,3 +29,5 @@ services:
     port: 3001
   swagger-ui:
     port: 8080
+  identity:
+    port: 8080
