@@ -1,6 +1,6 @@
 services:
   tax:
-    tag: "7c625b9"
+    tag: "main"
   product:
     tag: "main"
   cart:
