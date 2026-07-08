@@ -19,3 +19,9 @@ services:
     tag: "main"
   backoffice-bff:
     tag: "main"
+  storefront-ui:
+    tag: "main"
+  backoffice-ui:
+    tag: "main"
+  swagger-ui:
+    tag: "main"
