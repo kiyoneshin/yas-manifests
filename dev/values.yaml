@@ -20,8 +20,8 @@ services:
   backoffice-bff:
     tag: "main"
   storefront-ui:
-    tag: "main"
+    image: "nashtechgarage/yas-storefront-ui:latest"
   backoffice-ui:
-    tag: "main"
+    image: "nashtechgarage/yas-backoffice-ui:latest"
   swagger-ui:
-    tag: "main"
+    image: "swaggerapi/swagger-ui:latest"
