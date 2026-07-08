@@ -26,4 +26,4 @@ services:
   swagger-ui:
     image: "swaggerapi/swagger-ui:latest"
   identity:
-    image: "bitnami/keycloak:latest"
+    image: "quay.io/keycloak/keycloak:latest"
