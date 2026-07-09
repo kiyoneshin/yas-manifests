@@ -1,14 +1,14 @@
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:
-  name: product-access-control
+  name: cart-access-control
   namespace: dev
 spec:
   selector:
     matchLabels:
-      app: product
+      app: cart
   action: ALLOW
   rules:
   - from:
     - source:
-        namespaces: ["dev"]
+        principals: ["cluster.local/ns/dev/sa/storefront-bff"]
