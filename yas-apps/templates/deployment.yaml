@@ -58,6 +58,17 @@ spec:
           value: "{{ $config.port }}"
         - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
           value: "kafka.dev.svc.cluster.local:9092"
+{{- if eq $serviceName "identity" }}
+        volumeMounts:
+        - name: realm-import
+          mountPath: /opt/keycloak/data/import
+{{- end }}
+{{- if eq $serviceName "identity" }}
+      volumes:
+      - name: realm-import
+        configMap:
+          name: identity-realm-import
+{{- end }}
 {{- if ne $i $total }}
 ---
 {{- end }}

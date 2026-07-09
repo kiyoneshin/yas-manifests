@@ -29,3 +29,4 @@ services:
     image: "quay.io/keycloak/keycloak:latest"
     args:
       - start-dev
+      - --import-realm
