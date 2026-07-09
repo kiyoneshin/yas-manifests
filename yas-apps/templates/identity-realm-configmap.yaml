@@ -4,7 +4,7 @@ metadata:
   name: identity-realm-import
   namespace: {{ .Release.Namespace }}
 data:
-  yas-realm.json: |
+  Yas-realm.json: |
     {
       "id": "Yas",
       "realm": "Yas",
