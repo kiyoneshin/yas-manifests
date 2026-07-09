@@ -35,6 +35,8 @@ spec:
           value: "postgres"
         - name: SPRING_DATASOURCE_PASSWORD
           value: "yas_password"
+        - name: HOSTNAME
+          value: "0.0.0.0"
         - name: SPRING_KAFKA_BOOTSTRAP_SERVERS
           value: "kafka.dev.svc.cluster.local:9092"
 {{- if ne $i $total }}
