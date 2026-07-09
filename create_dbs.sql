@@ -1,0 +1,10 @@
+CREATE DATABASE yas_product;
+CREATE DATABASE yas_cart;
+CREATE DATABASE yas_order;
+CREATE DATABASE yas_customer;
+CREATE DATABASE yas_inventory;
+CREATE DATABASE yas_tax;
+CREATE DATABASE yas_media;
+CREATE DATABASE yas_search;
+CREATE DATABASE "yas_storefront-bff";
+CREATE DATABASE "yas_backoffice-bff";

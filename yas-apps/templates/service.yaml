@@ -13,7 +13,7 @@ spec:
   type: ClusterIP
   ports:
   - port: {{ $config.port }}
-    targetPort: {{ $config.port }}
+    targetPort: {{ if eq $serviceName "identity" }}8080{{ else }}{{ $config.port }}{{ end }}
     protocol: TCP
   selector:
     app: {{ $serviceName }}
